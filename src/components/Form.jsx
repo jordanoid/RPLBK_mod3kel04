@@ -15,7 +15,7 @@ function Form(props) {
             console.log({ nama, kelompok });
             props.onAddPraktikan({ nama, kelompok });
 
-            setNama("");
+            setNama(""); 
             setKelompok("");
         } else {
             alert("Form tidak valid");

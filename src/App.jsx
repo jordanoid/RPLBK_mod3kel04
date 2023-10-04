@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import './App.css';
 import Form from './components/Form';
 import Card from './components/Card';
+import Counter from './components/Counter';
 
 function App() {
-  const [count, setCount] = useState(0);
   const [praktikan, setPraktikan] = useState(null);
 
   const addPraktikanHandler = (data) => {
@@ -30,6 +30,7 @@ function App() {
           <Card nama={praktikan.nama} kelompok={praktikan.kelompok} />
         </>
       )}
+      <Counter/>
     </div>
   );
 }
